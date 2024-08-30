@@ -1,0 +1,14 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" formControlName="nombre" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" formControlName="email" required>
+
+    <button type="submit">Enviar</button>
+</form>
+
+<h2>Datos del formulario</h2>
+<ul>
+    <li *ngFor="let item of formData">{{ item.nombre }} - {{ item.email }}</li>
+</ul>
