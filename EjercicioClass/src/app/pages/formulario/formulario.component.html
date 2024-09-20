@@ -1,0 +1,51 @@
+<h2>Usuarios</h2>
+<div>
+    <form>
+        <div class="form-group">
+            <label for="codigo">Codigo</label>
+            <input type="text" class="form-control" [(ngModel)]="articulo.codigo" name="codigo">
+        </div>
+        <div class="form-group">
+            <label for="descripcion">Descripcion</label>
+            <input type="text" class="form-control" [(ngModel)]="articulo.descripcion" name="descripcion">
+        </div>
+        <div class="form-group">
+            <label for="nombre">Precio</label>
+            <input type="text" class="form-control" [(ngModel)]="articulo.precio" name="precio">
+        </div>
+        <button class="btn btn-primary" (click)="agregarRegistro()">Agregar</button>
+        <button class="btn btn-success">Editar</button>
+    </form>
+</div>
+<!-- <input type="text" [(ngModel)]="nombre" placeholder="Nombre" class="input"> -->
+<hr>
+<div class="alert alert-danger" role="alert" *ngIf="contarRegistros()">
+    No se encontraron registros
+</div>
+<!-- <div class="alert alert-success" role="alert" *ngIf="!contarRegistros()">
+    Se encontraron registros
+</div> -->
+<table class="table" *ngIf="!contarRegistros()">
+    <thead>
+        <tr>
+            <th>Codigo</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let articulo of articulos">
+            <td>{{ articulo.codigo }}</td>
+            <td>{{ articulo.descripcion }}</td>
+            <td>{{ articulo.precio }}</td>
+            <td>
+                <button class="btn btn-danger">Eliminar</button>
+                <button class="btn btn-warning" (click)="SelectArticulo(articulo)">Seleccionar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+
