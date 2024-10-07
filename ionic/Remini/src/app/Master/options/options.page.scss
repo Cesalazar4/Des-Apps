@@ -64,7 +64,6 @@ ion-card {
     margin: 1px;
 }
 .card:hover{
-    
     border-radius: 10px;
     margin-bottom: 5px;
 }
@@ -102,15 +101,21 @@ ion-icon {
 
 /* estilos del btn */
 .login-button {
-    margin-top: 20px;
-    background: #00BFFF;
-    border-radius: 20px;
+    margin-top: 40px;
+    color: #ffffff;
+    background-color: transparent;
+    font-size: large;
     font-weight: bold;
+    width: auto; /* Permitir que el ancho se ajuste automáticamente */
+    border-radius: 8px;
     /*font-style: italic;*/
+    display: flex;
+    align-items: center; 
+    justify-content: center;
 }
-
-
-
+.login-button:hover{
+    color: #ffeeaf;
+}
 
 .option-item { 
     display: flex; 
