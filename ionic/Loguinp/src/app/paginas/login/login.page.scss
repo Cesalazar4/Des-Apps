@@ -1,0 +1,44 @@
+ion-title{
+    text-align: center;
+}
+
+.target {
+    background: #000;
+    color: #9efff0;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 20px;
+}
+
+.cabeza{
+    text-align: center;
+}
+
+ion-card-title{
+    color: #9efff0;
+}
+
+.correo{
+    margin-bottom: 5px;
+    border-radius: 12px;
+}
+
+.contras{
+    margin-top: 10px;
+    border-radius: 12px;
+}
+
+.botondiv{
+    text-align: center;
+    margin: 7px;
+}
+
+.Btn{
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.Btn:hover{
+    color: bisque;
+    box-shadow: 2px 3px 10px 2px #000000;
+}

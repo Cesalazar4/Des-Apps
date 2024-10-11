@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+<!--
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+-->
+    <ion-title>LOGUIN</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+    <ion-card class="target">
+      <ion-card-header class="cabeza">
+        <ion-card-title>REMINIS</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        
+          <ion-item class="correo">
+            <ion-input label="Correo" label-placement="floating" type="email" placeholder="email@domain.com"></ion-input>
+            <ion-icon slot="start" name="at-outline"></ion-icon>
+          </ion-item>
+
+          <ion-item class="contras">
+            <ion-input label="Password" label-placement="floating" type="password" ></ion-input>
+            <ion-icon slot="start" name="finger-print-outline"></ion-icon>
+          </ion-item>
+        
+      </ion-card-content>
+      <div class="botondiv">
+        <ion-button class="Btn" size="small" (click)="login()" >Iniciar</ion-button>
+      </div>
+    </ion-card>
+  </div>
+
+</ion-content>
